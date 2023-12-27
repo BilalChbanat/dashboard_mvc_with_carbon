@@ -1,0 +1,41 @@
+Dates and Time
+
+
+$carbon = Carbon::today();
+$carbon = Carbon::tomorrow();
+$carbon = Carbon::now(); 
+$carbon = Carbon::yestrday(); 
+$carbon = Carbon::create(2010,11,16, 0,0,0);
+$carbon = new Carbon('first day of January 2008', 'America/Vancouver');
+echo $carbon = new Carbon('-2 days');
+
+
+Formating Output
+
+printf(" %s", $carbon->toatomString());
+printf(" %s", $carbon->toRssString());
+printf("Today: %s", $carbon->toDateString());
+printf(" %s", $carbon->toTimeString());
+
+printf(" %s", $carbon->format('D M Y i:s:h'));
+printf(" %s", $carbon->diffForHumans());
+
+printf("Today: %s", $carbon);
+
+
+getters 
+printf(" %s", $carbon->minute);
+printf(" %s", $carbon->timestamp);
+// What is a timestamp? A timestamp is the current time of an event that a computer records. Through mechanisms,..
+printf(" %s", $carbon->dayName);
+printf(" %s", $carbon->dayofyear);
+printf("%s", $carbon->age);
+
+setters 
+
+$carbon->year = 2005;
+$carbon->month = 10;
+$carbon->day = 2;
+$carbon->setDate(2009,2,16);
+$carbon->setTime(10,22,09);
+$carbon->setDateTime(2009, 2, 2, 2, 2, 2);

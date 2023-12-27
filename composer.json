@@ -1,0 +1,17 @@
+{
+    "name": "youcode/simple-mvc",
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "Controller/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BilalChbanat",
+            "email": "bilal.chbanat2003@gmail.com"
+        }
+    ],
+    "require": {
+        "nesbot/carbon": "^2.72"
+    }
+}
